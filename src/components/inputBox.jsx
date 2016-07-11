@@ -4,7 +4,10 @@
  var InputBox = (props) =>(
 
   <div className='inputBox'>
-    <input type='text' value='bread' />
+  <form onSubmit={ props.callback }>
+    <input type='text' placeholder='get cho item' onChange={ props.onChange }value={ props.itemToAdd } />
+    <input type='submit' />
+  </form>
   </div>
 
 )
